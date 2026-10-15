@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube & YT-Music Ad Skipper",
+  "version": "1.0",
+  "description": "Automatically fast-forwards and skips YouTube ads using custom JavaScript.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
